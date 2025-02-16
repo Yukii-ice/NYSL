@@ -1,36 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NYSL - Discover Lyrics</title>
         <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #121212;
+                color: white;
+                text-align: center;
+            }
             ul {
                 list-style-type: none;
-                margin; 0;
+                margin: 0;
                 padding: 0;
-                overflow; hidden;
+                overflow: hidden;
                 background-color: #333333;
+                display: flex;
+                justify-content: center;
             }
             li {
-                float: left; 
+                margin: 0 15px;
             }
             li a {
                 display: block;
-                color: black;
+                color: white;
                 text-align: center;
                 padding: 16px;
                 text-decoration: none; 
+                font-size: 18px;
             } 
             li a:hover {
-                background-color : #1111111; 
+                background-color: #111111;
+            }
+            .hero {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 80vh;
+                text-align: center;
+                padding: 20px;
+            }
+            .hero h1 {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+            .hero p {
+                font-size: 20px;
+                max-width: 600px;
+            }
+            .cta-button {
+                margin-top: 20px;
+                padding: 12px 24px;
+                background-color: #e50914;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+            .cta-button:hover {
+                background-color: #b20710;
+            }
+            footer {
+                margin-top: 50px;
+                padding: 20px;
+                background-color: #222;
+                font-size: 14px;
+                color: #bbb;
             }
         </style>
     </head>
     <body>
         <ul>
             <li><a href="#home">Home</a></li> 
-            <li><a href="#News">News</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            <li><a href="#About">About</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
+        <div class="hero">
+            <h1>Welcome to NYSL</h1>
+            <p>Discover lyrics from your favorite songs, anytime, anywhere. Dive into the world of music with NYSL.</p>
+            <button class="cta-button">Explore Now</button>
+        </div>
+        <footer>
+            &copy; 2025 NYSL. All rights reserved.
+        </footer>
     </body>
 </html>
- 
